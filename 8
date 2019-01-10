@@ -1,0 +1,20 @@
+#include <iostream> 
+using namespace std; 
+int min, max, r,i; 
+int main() 
+{ 
+setlocale(LC_ALL, "RUS"); 
+int n[12] = { 1, 3, 5, 7, 11, 13, 17, 19, 23, 29, 4, 18}; 
+min = n[0]; 
+max = n[0]; 
+for ( i = 0; i < 12; i++) 
+{ 
+if (n[i] < min) 
+min = n[i]; 
+
+if (n[i] > max) 
+max = n[i]; 
+} 
+cout << "Диапазон значений массива " << min << " : " << max << " " ; 
+system("pause"); 
+}
